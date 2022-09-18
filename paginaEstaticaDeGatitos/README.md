@@ -21,7 +21,9 @@ Estructura (referencia: Pronaca C.A.)
 	- Sobre nosotros
 		- Historia
 		- Por que lo hacemos
-		- Objetivo general y especificos 
+	- Objetivos
+		- general
+		- especificos
+	- Contactos
 		- Medios de comunicacion
-		- Target 
-		- contactos
+	- Target 
