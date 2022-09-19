@@ -1,8 +1,12 @@
+:root {
+    --light-brown: #A26459;
+}
+
 * {
-    padding: 0;
+    padding: 0px;
+    margin: 0px;
     list-style: none;
     font-family: sans-serif;
-
 }
 
 .content {
@@ -12,11 +16,11 @@
 }
 
 .navbarWrapper {
+    background-color: #FDF5D8;
     margin-top: 25.5px;
 	width: 1920px;
 	height: 90px;
-	background: #ffffff;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .leftNavbar {
@@ -27,12 +31,13 @@
 }
 
 #logo {
-    width: 100px;
-    height: 92px;
+    width: 90px;
+    height: 90px;
     border-radius: 15px;
 }
 
 .rightNavbar {
+    background: #FDF5D8;
     position:absolute;
     right:10%;
     height: 92px;
@@ -48,10 +53,10 @@
 }
 
 .rightNavbar>.menuDesktop>ul>li{
-    font: bold 14px verdana;
+    font: bold 14px verdana;    /* USE HANDY FONT */
     border-radius: 15px;
     padding: 16px;
-    background: rgb(141, 207, 239);
-    color: black;
+    background: var(--light-brown);
+    color: white;
     display: inline-block;
 }
