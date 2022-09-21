@@ -1,5 +1,6 @@
 :root {
     --light-brown: #A26459;
+    --light-skin: #FDF5D8;
 }
 
 * {
@@ -16,17 +17,19 @@
 }
 
 .navbarWrapper {
-    background-color: #FDF5D8;
-    margin-top: 25.5px;
+    position: absolute;
+    top: 25px;
+    background-color: var(--light-skin);
 	width: 100%;
 	height: 90px;
 }
 
 .leftNavbar {
+    background-color: var(--light-skin);
     position:absolute;
     left: 5%;
     width: 101px;
-    height: 92px;
+    height: 90px;
 }
 
 #logo {
@@ -39,7 +42,7 @@
     background: #FDF5D8;
     position:absolute;
     right:5%;
-    height: 92px;
+    height: 90px;
     width: 50%;
     /* border-right: 1px solid black; */
     /* border-left: 1px solid black; */
@@ -51,19 +54,36 @@
     justify-content: space-evenly;
 }
 
-.rightNavbar>.menuDesktop>ul>li{
+.rightNavbar>.menuDesktop>ul>.navBarItem{
     font: bold 14px verdana;    /* USE HANDY FONT */
     border-radius: 15px;
-    padding: 16px;
+    padding: 13.5px;
     background: var(--light-brown);
     color: white;
     /* display: inline-block; */
 }
 
+.navBarItem>a:hover {
+    animation: .15s extends_a;
+    padding: 17px;
+    /* animation: 3s ease-in 1s infinite reverse both running slidein; */
+}
+
+.banner_picture {
+    position: absolute;
+    top: 25px;
+    max-width: 100%;
+    /* height: 500px; */
+}
 
 /*/////// MEDIA QUERY SECTION ///////*/
 @media (max-width: 1250px) {
     .rightNavbar {
         display: none;
     }
+}
+
+@keyframes extends_a {
+    0% {padding: 13.5px;}
+    100% {padding: 17px;}
 }
