@@ -54,8 +54,8 @@
     justify-content: space-evenly;
 }
 
-.rightNavbar>.menuDesktop>ul>.navBarItem{
-    font: bold 14px verdana;    /* USE HANDY FONT */
+.rightNavbar>.menuDesktop>.navBarItems>li{
+    font: bold 14px verdana;    /*  -> USE HANDY FONT */
     border-radius: 15px;
     padding: 13.5px;
     background: var(--light-brown);
@@ -63,9 +63,14 @@
     /* display: inline-block; */
 }
 
-.navBarItem>a:hover {
-    animation: .15s extends_a;
-    padding: 17px;
+.navBarItems>li>a {
+    position: relative;
+    padding-bottom: 16px;
+}
+
+.navBarItems>li>a:hover {
+    animation: 1.15s border_animation step-end;
+
     /* animation: 3s ease-in 1s infinite reverse both running slidein; */
 }
 
@@ -83,7 +88,18 @@
     }
 }
 
-@keyframes extends_a {
-    0% {padding: 13.5px;}
-    100% {padding: 17px;}
+@keyframes border_animation {
+    0% {
+        /* padding: 13.5px; */
+        border-bottom: 3px solid var(--light-brown);
+        border-width: 10%;    
+        border-radius: 2px;   
+
+    }
+    100% {
+        /* padding: 17px; */
+        border-bottom: 3px solid var(--light-brown);
+        border-width: 100%;    
+        border-radius: 2px;    
+    }
 }
